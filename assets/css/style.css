@@ -4,7 +4,7 @@ h3{
 
 .stickers{
    display: flex;
-   justify-content: space-between;
+   justify-content: space-around;
 }
 .sticker1, .sticker2, .sticker3{
     display: flex;

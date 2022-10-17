@@ -44,6 +44,23 @@ del botón ingresar, un párrafo con el contenido "password 1 correcto", en caso
 password sea 714 se debe mostrar en el párrafo "password 2 es correcto", si ingresa otro
 valor se debe mostrar "password incorrecto". */
 
+const opt1 = document.querySelector("#opt1");
+const opt2 = document.querySelector("#opt2");
+const opt3 = document.querySelector("#opt3");
+const btnpw = document.querySelector("#btnpw");
+const msg = document.querySelector("#msg");
+
+btnpw.addEventListener("click", () =>{
+    if(opt1.value == 9 && opt2.value == 1 && opt3.value ==1){
+        msg.textContent = "Password 1 correcto"
+    }
+    else if(opt1.value == 7 && opt2.value == 1 && opt3.value ==4){
+        msg.textContent = "Password 2 correcto"
+    }
+    else{
+        msg.textContent = "Password incorrecto"
+    }
+})
 
 
 
